@@ -305,8 +305,8 @@ resource "aws_security_group" "database-sg" {
   }
 }
 
-resource "aws_lb" "external-elb" {
-  name               = "External-LB"
+resource "aws_lb" "externall-elb" {
+  name               = "Externall-LB"
   internal           = false
   load_balancer_type = "application"
   security_groups    = [aws_security_group.webserver-sg.id]
