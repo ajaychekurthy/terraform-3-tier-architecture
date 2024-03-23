@@ -193,11 +193,11 @@ resource "aws_db_instance" "default" {
   db_subnet_group_name   = aws_db_subnet_group.default.id
   engine                 = "mysql"
   engine_version         = "8.0.35"
-  instance_class         = "db.t2.micro"
+  instance_class         = "db.t3.micro"
   multi_az               = false
   db_name                = "mydb"
-  username               = "ajaychekurthy"
-  password               = "13Qk1a0101"
+  username               = "raham"
+  password               = "Rahamshaik#444555"
   skip_final_snapshot    = true
   vpc_security_group_ids = [aws_security_group.database-sg.id]
 }
