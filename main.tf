@@ -341,7 +341,7 @@ resource "aws_lb_target_group_attachment" "external-elb2" {
 }
 
 resource "aws_lb_listener" "external-elb" {
-  load_balancer_arn = aws_lb.external-elb.arn
+  load_balancer_arn = aws_lb.externall-elb.arn
   port              = "80"
   protocol          = "HTTP"
 
@@ -356,7 +356,7 @@ resource "aws_lb_listener" "external-elb" {
 
 output "lb_dns_name" {
   description = "The DNS name of the load balancer"
-  value       = aws_lb.external-elb.dns_name
+  value       = aws_lb.externall-elb.dns_name
 }
 
 
